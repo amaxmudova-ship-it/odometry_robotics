@@ -123,6 +123,10 @@ The sequence of moves, and the direction of every move, are the same as in the s
    - It plots both trajectories and the position error over time.
    - Enter the tape-measured end point in the last cell.
 
+## Discussion
+
+**The real trajectory follows the simulator well on the top bar of the 7, and first moves away at the corner of the 7: the real robot turns in a rounded curve instead of a sharp corner, so the diagonal starts a little further to the right. The biggest difference is on the way from the 7 to the 8 and on the upper loop: the real robot drives a curved line instead of a straight one, and its upper loop is bigger and shifted to the right. The largest error was 0.76 m, after about 11 s, but at the end the two paths almost meet again, only 0.05 m apart. The main error sources from the lecture are unequal motors and wheel slip: the two motors are not exactly equally strong, especially at low power such as 8 % and 20 %, and the wheels slip in quick turns because the moves follow each other without stopping. The robot does not know it is wrong, because it only follows timers and never checks its position. Its odometry log also cannot see wheel slip.**
+
 
 ## Limitations
 
