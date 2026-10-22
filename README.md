@@ -99,18 +99,6 @@ Left wheel = M3/E3, right wheel = M4/E4.
 
 Total driving time, without the 1 s pause: 27.5 s in the simulator, 32.0 s on the real robot.
 
-### How the simulator values translate into the shape
-
-In the 2D model, one percent of power turns a wheel at **5.5 deg/s** (a TRIK Studio constant). With `r = 0.028 m`, that is a wheel speed of `p · 5.5 · π/180 · r` m/s.
-
-**Formulas:**
-- **Line:** `distance = wheel speed × time`. At 56 %: 0.151 m/s, so 2.7 s → 0.41 m, 4.4 s → 0.66 m, 4.6 s → 0.69 m.
-- **Turn on the spot:** `angle = 2 · wheel speed / B × time`. At 40 %: 1.40 rad/s = 80 deg/s, so 1.5 s → 120°, 1.8 s → 144°, 0.3 s → 24°.
-- **Loop:** the robot turns at `(v_out − v_in) / B`, and the radius is `(v_out + v_in) / 2 ÷ turn rate`. With 30 % / 96 %: radius 0.147 m and 66 deg/s, so 5.6 s → 370° and 5.55 s → 366°.
-
-**Rounding:** the timers are rounded to round numbers, so the angles differ slightly from an exact 7:
-- the turns are 120° / 144° / 24°;
-- the loops turn slightly more than one full circle.
 
 ### Real robot values
 
@@ -124,7 +112,7 @@ The sequence of moves, and the direction of every move, are the same as in the s
 ## How to run
 
 1. **Simulator:**
-   - Open `timed_sim.qrs` in TRIK Studio (kit TRIK v6.2) and press Run in the 2D model.
+   - Open `timed_sim.qrs` in TRIK Studio and press Run in the 2D model.
    - The robot starts at the origin facing right and draws the "78".
    - The log is written to `C:\Users\user\Desktop\odometry_data_sim.txt`.
 2. **Real robot:**
