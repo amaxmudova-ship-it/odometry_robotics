@@ -16,15 +16,6 @@ The robot is driven **only with Motors Forward, Stop Motors and Timer blocks**: 
 
 The start pose is the origin. The robot faces +x, and +y is to its left. Coordinates below are what the simulator program draws, calculated from its powers and timers.
 
-```
- (0,0) ──────────── (0.41,0)        ╭──╮   upper loop, centre (0.71,-0.15)
-                      ╱             │    │
-                    ╱                ╰──╯   ← (0.71,-0.29) start / end of the 8
-                  ╱                 ╭──╮
-                ╱                   │    │  lower loop, centre (0.71,-0.44)
-   (0.08,-0.57)                      ╰──╯
-```
-
 1. **The 7:**
    - top bar, 0.41 m;
    - turn right 120°;
