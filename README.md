@@ -78,8 +78,8 @@ Left wheel = M3/E3, right wheel = M4/E4.
 
 | | Simulator (`timed_sim.qrs`) | Real robot (`timed_real.qrs`) |
 |---|---|---|
-| Wheel radius `r` | 0.028 m (2D-model wheel, 5.6 cm diameter) | **0.0375 m (measured)** |
-| Wheel base `B` | 0.154 m (2D-model wheels 44 px apart) | **0.194 m (measured)** |
+| Wheel radius `r` | 0.028 m (2D-model wheel, 5.6 cm diameter) | **0.042 m (measured)** |
+| Wheel base `B` | 0.154 m (2D-model wheel) | **0.194 m (measured)** |
 | Log file | `C:\Users\user\Desktop\odometry_data_sim.txt` | `odometry_data_real.txt` (on the robot) |
 
 ## Motor powers and timers
